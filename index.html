@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulse Fit - Transform Your Body</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header>
+        <div class="container navbar">
+            <a href="#" class="logo">PULSE<span>FIT</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#bmi">BMI Calculator</a></li>
+                <li><a href="#plans">Plans</a></li>
+                <li><a href="#contact" class="btn-nav">Join Now</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <h1>IGNITE YOUR <span>POTENTIAL</span></h1>
+            <p>अपनी फिटनेस जर्नी शुरू करें Pulse Fit के साथ। अत्याधुनिक इक्विपमेंट, सर्टिफाइड ट्रेनर्स और बेस्ट डाइट प्लान्स।</p>
+            <div class="hero-btns">
+                <a href="#plans" class="btn btn-primary">Start Free Trial</a>
+                <a href="#features" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features section">
+        <div class="container">
+            <h2 class="section-title">Why Choose <span>Pulse Fit?</span></h2>
+            <div class="feature-grid">
+                <div class="card">
+                    <div class="icon">💪</div>
+                    <h3>Modern Equipment</h3>
+                    <p>टॉप क्वालिटी और लेटेस्ट वर्कआउट मशीनें जो आपको बेस्ट रिजल्ट्स दें।</p>
+                </div>
+                <div class="card">
+                    <div class="icon">🥗</div>
+                    <h3>Nutrition Guides</h3>
+                    <p>सर्टिफाइड न्यूट्रिशनिस्ट द्वारा कस्टमाइज्ड डाइट और मील प्लान्स।</p>
+                </div>
+                <div class="card">
+                    <div class="icon">🏋️‍♂️</div>
+                    <h3>Expert Trainers</h3>
+                    <p>पर्सनल कोच जो हर स्टेप पर आपके फॉर्म और फिटनेस का ध्यान रखें।</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive BMI Calculator Section -->
+    <section id="bmi" class="bmi-section section">
+        <div class="container">
+            <h2 class="section-title">Check Your <span>BMI</span></h2>
+            <div class="bmi-box">
+                <div class="input-group">
+                    <label>Weight (kg):</label>
+                    <input type="number" id="weight" placeholder="उदा. 70">
+                </div>
+                <div class="input-group">
+                    <label>Height (cm):</label>
+                    <input type="number" id="height" placeholder="उदा. 175">
+                </div>
+                <button onclick="calculateBMI()" class="btn btn-primary">Calculate BMI</button>
+                <div id="bmi-result" class="result"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Plans -->
+    <section id="plans" class="plans section">
+        <div class="container">
+            <h2 class="section-title">Membership <span>Plans</span></h2>
+            <div class="pricing-grid">
+                <div class="price-card">
+                    <h3>Basic</h3>
+                    <div class="price">₹999<span>/month</span></div>
+                    <ul>
+                        <li>✓ Gym Floor Access</li>
+                        <li>✓ Locker & Shower</li>
+                        <li>✗ Personal Trainer</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-secondary">Choose Plan</a>
+                </div>
+                <div class="price-card popular">
+                    <span class="badge">Most Popular</span>
+                    <h3>Pro</h3>
+                    <div class="price">₹1,999<span>/month</span></div>
+                    <ul>
+                        <li>✓ All Basic Features</li>
+                        <li>✓ Diet Consultation</li>
+                        <li>✓ 2 Trainer Sessions/Mo</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">Choose Plan</a>
+                </div>
+                <div class="price-card">
+                    <h3>Elite</h3>
+                    <div class="price">₹3,499<span>/month</span></div>
+                    <ul>
+                        <li>✓ All Pro Features</li>
+                        <li>✓ Unlimited Personal Training</li>
+                        <li>✓ Steam & Sauna Access</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-secondary">Choose Plan</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container footer-content">
+            <p>&copy; 2026 Pulse Fit. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
